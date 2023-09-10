@@ -28,3 +28,14 @@ y <- gsub("\\(\\w+ |\\)" , "" , y)
 z <- pdf[grepl("CEP:" , pdf)]
 z <- gsub("[^0-9 | -]" , "" , z)
 z <- trimws(z , "both")
+
+
+endereço <- pdf[grepl("Endereço:", pdf)]
+endereço <- gsub("Endereço: " , "" , endereço)
+endereço <- gsub("CEP: .*" , "" , endereço)
+
+
+endereço
+
+# Teste :))
+
